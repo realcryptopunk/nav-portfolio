@@ -331,6 +331,43 @@
             border: none;
         }
         
+        /* Project Screenshots */
+        .project-screenshots {
+            display: flex;
+            gap: 12px;
+            margin: 16px 0;
+            overflow-x: auto;
+            padding-bottom: 4px;
+        }
+        
+        .screenshot {
+            width: 80px;
+            height: auto;
+            border-radius: 8px;
+            border: 1px solid var(--color-chalk);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .screenshot:hover {
+            transform: scale(2.5);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+            z-index: 100;
+            position: relative;
+        }
+        
+        .inline-link {
+            color: var(--color-obsidian);
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-color: var(--color-chalk);
+            transition: text-decoration-color 0.2s ease;
+        }
+        
+        .inline-link:hover {
+            text-decoration-color: var(--color-obsidian);
+        }
+        
         /* Contact Section */
         .contact-cards {
             display: grid;
@@ -529,10 +566,15 @@
             </div>
         </div>
 
-        <div class="project">
+        <div class="project" data-live-url="https://pledge-website-e798.vercel.app/">
             <div class="project-content">
                 <h3 class="project-title">Motion</h3>
                 <p class="project-description">Gamified finance education with paper trading, AI coaching, and Duolingo-style progression.</p>
+                <div class="project-screenshots">
+                    <img src="motion-1.png" alt="Motion app screenshot" class="screenshot">
+                    <img src="motion-2.png" alt="Motion app screenshot" class="screenshot">
+                    <img src="motion-3.png" alt="Motion app screenshot" class="screenshot">
+                </div>
                 <div class="project-tags">
                     <span class="tag">React Native</span>
                     <span class="tag">Expo</span>
@@ -541,14 +583,15 @@
                 </div>
             </div>
             <div class="project-links">
+                <a href="https://pledge-website-e798.vercel.app/" target="_blank" class="project-link">Site →</a>
                 <a href="https://github.com/realcryptopunk/finance-app-FRONTEND" target="_blank" class="project-link">GitHub →</a>
             </div>
         </div>
 
-        <div class="project">
+        <div class="project" data-live-url="https://golf-site-t3i8.vercel.app/">
             <div class="project-content">
                 <h3 class="project-title">SwingAI</h3>
-                <p class="project-description">Computer vision golf swing analysis with 3D pose estimation and temporal phase detection.</p>
+                <p class="project-description">Computer vision golf swing analysis with 3D pose estimation and temporal phase detection. Built for <a href="https://vert.nyc" target="_blank" class="inline-link">Vert.nyc</a>.</p>
                 <div class="project-tags">
                     <span class="tag">Swift</span>
                     <span class="tag">CoreML</span>
@@ -557,7 +600,38 @@
                 </div>
             </div>
             <div class="project-links">
+                <a href="https://golf-site-t3i8.vercel.app/" target="_blank" class="project-link">Site →</a>
                 <a href="https://github.com/realcryptopunk/Golf" target="_blank" class="project-link">GitHub →</a>
+            </div>
+        </div>
+
+        <div class="project" data-live-url="https://refill-radarv1.vercel.app/">
+            <div class="project-content">
+                <h3 class="project-title">Refill Radar</h3>
+                <p class="project-description">Find free water refill stations near you. Location-based search with community-contributed spots.</p>
+                <div class="project-tags">
+                    <span class="tag">Next.js</span>
+                    <span class="tag">Maps API</span>
+                    <span class="tag">Vercel</span>
+                </div>
+            </div>
+            <div class="project-links">
+                <a href="https://refill-radarv1.vercel.app/" target="_blank" class="project-link">Live →</a>
+            </div>
+        </div>
+
+        <div class="project" data-live-url="https://spermrush3.vercel.app/">
+            <div class="project-content">
+                <h3 class="project-title">Sperm Rush</h3>
+                <p class="project-description">Browser-based game. Don't ask, just play.</p>
+                <div class="project-tags">
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Canvas</span>
+                    <span class="tag">Vercel</span>
+                </div>
+            </div>
+            <div class="project-links">
+                <a href="https://spermrush3.vercel.app/" target="_blank" class="project-link">Play →</a>
             </div>
         </div>
 
